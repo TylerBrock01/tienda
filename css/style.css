@@ -117,8 +117,20 @@ body{
 
 }
 .producto__nombre{
-
+    font-size: 4rem;
 }
 .producto__precio{
+    font-size: 2.8rem;
+    background-color: var(--complemento2);
+}
+.producto__precio:hover{
+    background-color: ;
+}
 
+.producto__precio,
+.producto__nombre{
+    margin: 1rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.2;
 }
