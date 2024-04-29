@@ -1,5 +1,12 @@
 :root{
-
+    --fondo: #ca79ca;
+    --fondo1: #933e95;
+    --fondo2: #742977;
+    --fondo3: #e499e4;
+    --fondo4: #e499e4;
+    --complemento1: #53cc2b;
+    --complemento2: #23a900;
+    --complemento3: #b2ffb0;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -10,18 +17,12 @@ html {
     box-sizing: inherit;
 }
 body{
-    background-color: purple;
+    background-color: var(--fondo);
     font-size: 1.5rem;
     line-height: 1.5;
-    font-family: "Domine", serif;
-    font-optical-sizing: auto;
-    /*font-weight: <weight>;*/
-    font-style: normal;
-    color: whitesmoke;
 }
  p{
     font-size: 1.8rem;
-
  }
  a{
      text-decoration: none;
@@ -33,9 +34,13 @@ body{
      max-width: 120rem;
      margin: 0 auto;
  }
- h1,h2,h3{
-     text-align: center;
-     color: black;
+ h1,h2,h3,p{
+     color: white;
+
+     font-family: "Domine", serif;
+     font-optical-sizing: auto;
+     /*font-weight: <weight>;*/
+     font-style: normal;
 
  }
  h1 {
@@ -52,7 +57,36 @@ body{
     display: flex;
     justify-content: center;
 }
+.footer{
+    background-color: var(--fondo2);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+.footer_text{
+    color: var(--fondo4);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
 .header_logo{
     margin: 3rem 0;
-
+}
+/** Navegacion n**/
+.navegacion{
+    background-color: var(--fondo1);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-transform: capitalize;
+}
+.navegacion__enlace{
+    color: white;
+    font-size: 3rem;
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--complemento1);
+    background-color: var(--fondo2);
 }
