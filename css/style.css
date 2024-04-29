@@ -1,0 +1,49 @@
+:root{
+
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: lime;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    /*font-weight: <weight>;*/
+    font-style: normal;
+    color: whitesmoke;
+}
+ p{
+    font-size: 1.8rem;
+
+ }
+ a{
+     text-decoration: none;
+ }
+ img{
+     width: 100%;
+ }
+ .contenedor{
+     max-width: 120rem;
+     margin: 0 auto;
+ }
+ h1,h2,h3{
+     text-align: center;
+     color: black;
+
+ }
+ h1 {
+     font-size: 4rem;
+ }
+ h2{
+     font-size: 3.2rem;
+ }
+ h3{
+     font-size: 2.4rem;
+ }
