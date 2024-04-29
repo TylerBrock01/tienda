@@ -10,7 +10,7 @@ html {
     box-sizing: inherit;
 }
 body{
-    background-color: lime;
+    background-color: purple;
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: "Domine", serif;
@@ -27,7 +27,7 @@ body{
      text-decoration: none;
  }
  img{
-     width: 100%;
+     max-width: 100%;
  }
  .contenedor{
      max-width: 120rem;
@@ -47,3 +47,12 @@ body{
  h3{
      font-size: 2.4rem;
  }
+/* header*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header_logo{
+    margin: 3rem 0;
+
+}
