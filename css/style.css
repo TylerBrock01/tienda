@@ -7,7 +7,8 @@
     --complemento1: #53cc2b;
     --complemento2: #23a900;
     --complemento3: #b2ffb0;
-    --resaltado4: #b2ffb0;
+    --resaltado1: #b2ffb0;
+    --resaltado2: #004a00;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -34,6 +35,7 @@ body{
  .contenedor{
      max-width: 120rem;
      margin: 0 auto;
+     text-align: center;
  }
  /*default color*/
  h1,h2,h3,p{
@@ -125,7 +127,8 @@ body{
     background-color: var(--complemento2);
 }
 .producto__precio:hover{
-    background-color: var(--resaltado4) ;
+    background-color: var(--resaltado1);
+    color: var(--resaltado2);
 }
 
 .producto__precio,
