@@ -36,6 +36,7 @@ body{
      max-width: 120rem;
      margin: 0 auto;
      text-align: center;
+     text-transform: capitalize;
  }
  /*default color*/
  h1,h2,h3,p{
@@ -107,6 +108,23 @@ body{
         grid-template-columns: repeat(3, 1fr);
 
     }
+    .producto__nombre{
+        font-size: 4rem;
+    }
+    .producto__precio{
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 400px){
+    .producto__nombre{
+        font-size: 2.5rem;
+    }
+    .producto__precio{
+        font-size: 1.9rem;
+    }
+    .tts{
+        font-size: 3rem;
+    }
 }
 /* productos */
 .producto{
@@ -120,10 +138,10 @@ body{
 
 }
 .producto__nombre{
-    font-size: 4rem;
+    /*font-size: 2rem;*/
 }
 .producto__precio{
-    font-size: 2.8rem;
+    /*font-size: 2.8rem;*/
     background-color: var(--complemento2);
 }
 .producto__precio:hover{
@@ -134,7 +152,6 @@ body{
 .producto__precio,
 .producto__nombre{
     margin: 1rem 0;
-    text-transform: capitalize;
     text-align: center;
     line-height: 1.2;
 }
