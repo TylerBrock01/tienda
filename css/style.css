@@ -7,6 +7,7 @@
     --complemento1: #53cc2b;
     --complemento2: #23a900;
     --complemento3: #b2ffb0;
+    --resaltado4: #b2ffb0;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -124,7 +125,7 @@ body{
     background-color: var(--complemento2);
 }
 .producto__precio:hover{
-    background-color: ;
+    background-color: var(--resaltado4) ;
 }
 
 .producto__precio,
