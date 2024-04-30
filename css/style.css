@@ -1,6 +1,5 @@
 :root{
-    --fondo: #ca79ca;
-    --fondo1: #933e95;
+    --fondo1: #aa549a;
     --fondo2: #742977;
     --fondo3: #e499e4;
     --fondo4: #e499e4;
@@ -21,7 +20,7 @@ html {
     box-sizing: inherit;
 }
 body{
-    background-color: #aa549a;
+    background-color: var(--fondo1);
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -33,9 +32,8 @@ body{
      text-decoration: none;
  }
  img{
-     max-width: 100%;
+     width: 100%;
  }
-
  .contenedor{
      max-width: 120rem;
      margin: 0 auto;
@@ -148,12 +146,12 @@ body{
 .producto__precio{
     /*font-size: 2.8rem;*/
     background-color: var(--complemento2);
+    transition: .3s ease;
 }
 .producto__precio:hover{
     background-color: var(--resaltado1);
     color: var(--resaltado2);
 }
-
 .producto__precio,
 .producto__nombre{
     margin: 1rem 0;
@@ -168,7 +166,6 @@ body{
 }
 .grafico--camisas{
     background-image: url("../img/grafico1.jpg");
-
 }
 @media (max-width: 765px){
     .grafico--camisas{
@@ -206,7 +203,6 @@ body{
         column-gap: 2rem;
     }
 }
-
 .nosotros__imagen{
     grid-row: 1/2;
     width: 100% ;
@@ -230,10 +226,6 @@ body{
 }
 .bloque{
     text-align: center;
-
-}
-.bloque__imagen{
-    width: 100%;
 }
 .bloque__titulo{
     margin: 0;
@@ -245,4 +237,43 @@ body{
 }
 .comprar__titulo{
     padding-left: 2rem;
+}
+/*pagina del producto*/
+@media (min-width: 768px ){
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+.formulario__campo{
+    /*border-color: var(--fondo2);*/
+    /*border-width: 1rem;*/
+    /*border-style: solid;*/
+    font-family: "Domine", serif;
+    border: 1rem solid var(--fondo2);
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.formulario__submit{
+    background-color: var(--complemento2);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: "Domine", serif;
+    transition: .3s ease;
+}
+.formulario__submit:hover{
+    cursor: pointer;
+    color: black;
+    background-color: var(--complemento3);
 }

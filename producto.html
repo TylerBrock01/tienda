@@ -16,14 +16,35 @@
 <body>
 <header class="header">
     <a href="index.html"></a>
-    <img class="header_logo" src="img/logo.png" alt="Logotipo">
+    <img class="header_logo" src="img/void.jpeg" alt="Logotipo">
 </header>
 <nav class="navegacion">
     <a class="navegacion__enlace" href="index.html">tienda</a>
     <a class="navegacion__enlace" href="nosotros.html">nosotros</a>
 </nav>
 <main class="contenedor">
-    <h1>nuestros productos</h1>
+    <h1>react js</h1>
+    <div class="camisa">
+        <img class="camisa__imagen" src="img/3.jpg" alt="imagen de camisa">
+        <div class="camisa__contenido">
+            <p>  Aliquam sed lacus quis magna sagittis dictum. Integer porttitor convallis purus, aliquam elementum turpis pellentesque eget. Aenean in congue libero. Vestibulum ipsum magna, convallis quis euismod nec, luctus sed sem. Donec nec vulputate nibh. Quisque facilisis pharetra tincidunt.</p>
+
+            <form class="formulario">
+                <label>
+                    <select  class="formulario__campo">
+                        <option disabled selected>--Seleccionar Talla--</option>
+                        <option value="chica">Chica</option>
+                        <option value="mediana">Mediana</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </label>
+                <label>
+                    <input class="formulario__campo" type="number" placeholder="cantidad" min="1">
+                </label>
+                <input class="formulario__submit" type="submit" value="Agregar al carrito">
+            </form>
+        </div>
+    </div>
 </main>
 <footer class="footer">
     <p class="footer_text">Front end store - Todos los derechos reservado</p>
