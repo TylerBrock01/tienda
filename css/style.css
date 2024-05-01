@@ -34,7 +34,7 @@ body{
  .contenedor{
      max-width: 120rem;
      margin: 0 auto;
-     text-transform: capitalize;
+     text-transform: uppercase;
  }
  /*default color*/
  h1,h2,h3,p{
@@ -106,27 +106,27 @@ body{
 @media (min-width: 768px){
     .grid{
         grid-template-columns: repeat(3, 1fr);
-
     }
     .producto__nombre{
-        font-size: 4rem;
-    }
-    .producto__precio{
         font-size: 2.8rem;
     }
-}
-@media (max-width: 400px){
-    .producto__nombre{
+    .producto__precio{
         font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 760px){
+    .producto__nombre{
+        font-size: 2rem;
     }
     .producto__precio{
-        font-size: 1.9rem;
+        font-size: 2rem;
+        padding: 1rem;
     }
-    .tts{
+    .titulo{
         font-size: 3rem;
     }
 }
-
 /* productos */
 
 .producto{
@@ -136,8 +136,10 @@ body{
 .producto__imagen{
     max-width: 100%;
 }
-.producto__informacion{
-
+@media (min-width: 768px){
+    .producto__informacion{
+        padding: 1rem;
+    }
 }
 .producto__nombre{
     /*font-size: 2rem;*/
