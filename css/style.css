@@ -264,11 +264,11 @@ body{
     grid-template-rows: repeat(2,1fr);
     padding: 2rem;
 }
-/*@media (min-width: 768px){*/
-/*    .camisa{*/
-/*        grid-template-columns: repeat(2,1fr);*/
-/*    }*/
-/*}*/
+@media (min-width: 768px){
+    .camisa{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 .camisa__imagen{
     width: 100%;
     margin: 0 0 -1rem 0;
