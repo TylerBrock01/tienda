@@ -33,7 +33,7 @@ body{
  }
  .contenedor{
      max-width: 120rem;
-     /*margin: 0 auto;*/
+     margin: 0 auto;
  }
  /*default color*/
  h1,h2,h3,p{
@@ -256,8 +256,11 @@ body{
     text-transform: capitalize;
     color: white;
     background-color: var(--fondo2);
-    display: flex;
+    display: grid;
     justify-content: center;
+}
+@media (min-width: 768px){
+
 }
 .camisa{
     display: grid;
